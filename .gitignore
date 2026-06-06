@@ -1,0 +1,23 @@
+# MSYS2 installer (downloaded at runtime)
+msys2-setup.exe
+
+# Build artifacts
+*.exe
+*.out
+*.o
+*.obj
+
+# VS Code user settings
+.vscode/settings.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+~*
+
+# Backup files
+*.bak
+*.orig

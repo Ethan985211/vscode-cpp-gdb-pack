@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "g++ build",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "taskkill /f /im \"${fileBasenameNoExtension}.exe\" >nul 2>&1 & C:\\msys64\\ucrt64\\bin\\g++.exe -g -O0 \"${file}\" -o \"${workspaceFolder}\\${fileBasenameNoExtension}.exe\""
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
